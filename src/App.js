@@ -14,9 +14,11 @@ const App = () => {
         {name: 'Войти',      icon: mdiLogin,     path: '/login',  Component: Login},
     ]
 
+    const [menuIndex, setMenuIndex] = React.useState(0);
+
     return (
         <BrowserRouter>
-            <MainMenu pages={pages}/>
+            <MainMenu pages={pages} menuIndex={menuIndex} setMenuIndex={setMenuIndex} />
             <div className="mf-container">
                 <Routes>
                     {pages.map((page, key) => {

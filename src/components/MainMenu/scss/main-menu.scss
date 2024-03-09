@@ -17,9 +17,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         overflow: hidden;
+        transition: width .3s;
 
         &:hover {
-            width: unset;
+            width: 130px;
         }
 
         a {
@@ -27,9 +28,17 @@
             justify-content: center;
             align-items: center;
             height: 30px;
-            padding-top: 10px;
+            margin-top: 10px;
             color: #000;
             text-decoration: none;
+
+            &.current {
+                background: #ccc;
+            }
+
+            &:hover {
+                background: #eee;
+            }
 
             .mf-mm-icon {
                 height: 100%;
@@ -42,6 +51,7 @@
             .mf-mm-name {
                 white-space: nowrap;
                 margin: 0 12px 0 6px;
+                width: 100px;
             }
         }
     }
