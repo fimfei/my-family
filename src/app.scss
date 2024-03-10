@@ -6,11 +6,21 @@ div#root {
   left: 0;
   top: 0;
 
+  .mf-mm-initiator {
+
+  }
+
   .mf-container {
     width: 100%;
     text-align: center;
+    position: relative;
+    overflow: hidden,
   }
 
   font-family: sans-serif;
   font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
 }
